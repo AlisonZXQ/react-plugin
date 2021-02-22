@@ -1,0 +1,78 @@
+@import '~antd/dist/antd.less';
+@import './color-board.less';
+@import './function.less'; // 全局快捷样式
+@import './util.less'; // 帮助函数，比如上下左右的margin
+@import '//at.alicdn.com/t/font_1520787_k2f4xsdsto.css'; // iconfont库
+
+// antd样式替换
+.ant-legacy-form-item {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.ant-legacy-form-item-label {
+  line-height: 32px;
+}
+
+.ant-legacy-form-item-control {
+  line-height: 32px;
+}
+
+.ant-row {
+  position    : relative;
+  height      : auto;
+  margin-right: 0;
+  margin-left : 0;
+  zoom        : 1;
+  display     : block;
+  box-sizing  : border-box;
+}
+
+.ant-col {
+  width  : 100%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.ant-modal-header {
+  //modal弹框头部高度变窄
+  border-top-left-radius : 2px;
+  border-top-right-radius: 2px;
+  padding                : 12px 20px;
+  border-bottom          : none;
+
+  .ant-modal-title {
+    font-weight: bold;
+    font-size  : 16px;
+    color      : @color-black-9;
+  }
+}
+
+.ant-modal-close {
+  //modal弹框的关闭按钮与标题对其
+  top: -5px;
+}
+
+.ant-modal-confirm-content {
+  //全局modal确认框的内容样式
+  color    : @color-black-6  !important;
+  font-size: 12px !important;
+}
+
+.ant-modal-body {
+  padding: 8px 20px 20px 20px;
+}
+
+.ant-modal-confirm .ant-modal-body {
+  //confirm的modal弹框
+  padding: 12px 20px;
+}
+
+.ant-modal-footer {
+  padding   : 0px 20px 12px 20px;
+  border-top: none;
+
+  button {
+    width: 98px;
+  }
+}

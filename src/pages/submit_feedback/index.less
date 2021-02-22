@@ -1,0 +1,36 @@
+@import '../../styles/color-board.less';
+
+.selectCard {
+  width: 250px;
+  height: 78px;
+  display: inline-block;
+  border: 1px @color-black-2 solid;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  padding: 16px;
+  cursor: pointer;
+  &:last-child {
+    margin-left: 12px;
+  }
+  .title {
+    margin-left: 12px;
+    color: @color-black-8;
+  }
+  .content {
+    margin-top: 6px;
+    padding-left: 26px;
+    display: block;
+    color: @color-black-6;
+  }
+  .icon {
+    font-size: 15px;
+    color: @color-black-4;
+  }
+}
+
+.activeSelect {
+  border: 1px @color-blue-6 solid;
+  .icon {
+    color: @color-blue-6;
+  }
+}
